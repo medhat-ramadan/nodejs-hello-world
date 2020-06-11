@@ -1,0 +1,44 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  annotations:
+    commit.image.appsody.dev/contextDir: C:\Users\MedhatAbounar\Documents\JAZZCash\nodejs-hello-world
+    commit.image.appsody.dev/date: Fri Jun 12 01:09:11 2020 +0200
+    commit.image.appsody.dev/message: appsody init
+    commit.stack.appsody.dev/contextDir: /incubator/nodejs
+    commit.stack.appsody.dev/date: Wed Jun 10 14:59:16 2020 +0100
+    commit.stack.appsody.dev/message: 'meta: replace Sam with Gireesh as the maintainer
+      for node stacks (#830)'
+    image.opencontainers.org/created: "2020-06-12T01:26:50+02:00"
+    image.opencontainers.org/documentation: https://github.com/medhat-ramadan/nodejs-hello-world
+    image.opencontainers.org/revision: 2815e66448f4dd5c93149cdc4f5145766e90c3a2
+    image.opencontainers.org/source: |
+      https://github.com/medhat-ramadan/nodejs-hello-world/tree/master
+    image.opencontainers.org/url: https://github.com/medhat-ramadan/nodejs-hello-world
+    stack.appsody.dev/authors: Gireesh Punathil <gireeshpunathil>
+    stack.appsody.dev/configured: docker.io/appsody/nodejs:0.3
+    stack.appsody.dev/created: "2020-06-10T14:02:24Z"
+    stack.appsody.dev/description: Runtime for Node.js applications
+    stack.appsody.dev/digest: sha256:0cefdc635e3ebc5375c8dbcb8d4c9aa628a3e35e3bf140876b4eabf48f238107
+    stack.appsody.dev/documentation: https://github.com/appsody/stacks/tree/master/incubator/nodejs/README.md
+    stack.appsody.dev/licenses: Apache-2.0
+    stack.appsody.dev/revision: e33111183a1cd18bd96d1974902f4d1003d2bb27
+    stack.appsody.dev/source: https://github.com/appsody/stacks/tree/master/incubator/nodejs/image
+    stack.appsody.dev/tag: docker.io/appsody/nodejs:0.3.7
+    stack.appsody.dev/title: Node.js
+    stack.appsody.dev/url: https://github.com/appsody/stacks/tree/master/incubator/nodejs
+  creationTimestamp: null
+  labels:
+    image.opencontainers.org/title: nodejs-hello-world
+    stack.appsody.dev/id: nodejs
+    stack.appsody.dev/version: 0.3.7
+  name: nodejs-hello-world
+spec:
+  applicationImage: dev.local/nodejs-hello-world
+  createKnativeService: false
+  expose: true
+  service:
+    port: 3000
+    type: NodePort
+  stack: nodejs
+  version: 1.0.0

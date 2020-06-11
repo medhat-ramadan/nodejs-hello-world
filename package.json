@@ -2,10 +2,11 @@
   "name": "nodejs-simple",
   "version": "0.1.0",
   "description": "Simple Node.js application",
+  "main": "index.js",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "node app.js",
-    "debug": "node --inspect app.js"
+    "start": "node index.js",
+    "debug": "node --inspect index.js"
   },
   "repository": {
     "type": "git",
