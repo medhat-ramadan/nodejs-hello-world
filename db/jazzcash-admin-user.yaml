@@ -1,0 +1,27 @@
+---
+apiVersion: mongodb.com/v1
+kind: MongoDBUser
+metadata:   
+  name: jazz-cash-admin-user
+
+spec:
+  passwordSecretKeyRef:    
+    name: jazzcash-mongo-admin-secret    
+    # Match to metadata.name of the User Secret
+    key: password
+  username: "admin"
+
+  db: "admin" 
+  mongodbResourceRef:
+    name: "jazzcash"
+    # Match to MongoDB resource using authenticaiton
+  roles:
+    - db: "admin"
+      name: "clusterAdmin"
+    - db: "admin"
+      name: "userAdminAnyDatabase"
+    - db: "admin"
+      name: "readWrite"
+    - db: "admin"
+      name: "userAdminAnyDatabase"
+...

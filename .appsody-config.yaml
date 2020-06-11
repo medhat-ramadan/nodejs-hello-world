@@ -1,0 +1,3 @@
+id: "20200612005233.65817850"
+project-name: nodejs-hello-world
+stack: docker.io/appsody/nodejs:0.3
