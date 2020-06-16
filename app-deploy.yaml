@@ -3,17 +3,16 @@ kind: AppsodyApplication
 metadata:
   annotations:
     commit.image.appsody.dev/contextDir: C:\Users\MedhatAbounar\Documents\JAZZCash\nodejs-hello-world
-    commit.image.appsody.dev/date: Fri Jun 12 01:09:11 2020 +0200
-    commit.image.appsody.dev/message: appsody init
+    commit.image.appsody.dev/date: Fri Jun 12 01:37:31 2020 +0200
+    commit.image.appsody.dev/message: port change to match stack configuration
     commit.stack.appsody.dev/contextDir: /incubator/nodejs
     commit.stack.appsody.dev/date: Wed Jun 10 14:59:16 2020 +0100
     commit.stack.appsody.dev/message: 'meta: replace Sam with Gireesh as the maintainer
       for node stacks (#830)'
-    image.opencontainers.org/created: "2020-06-12T01:26:50+02:00"
+    image.opencontainers.org/created: "2020-06-15T01:40:25Z"
     image.opencontainers.org/documentation: https://github.com/medhat-ramadan/nodejs-hello-world
-    image.opencontainers.org/revision: 2815e66448f4dd5c93149cdc4f5145766e90c3a2
-    image.opencontainers.org/source: |
-      https://github.com/medhat-ramadan/nodejs-hello-world/tree/master
+    image.opencontainers.org/revision: 86b928eebffc226ef06c9858c80b7094b83e573e-modified
+    image.opencontainers.org/source: https://github.com/medhat-ramadan/nodejs-hello-world/tree/master
     image.opencontainers.org/url: https://github.com/medhat-ramadan/nodejs-hello-world
     stack.appsody.dev/authors: Gireesh Punathil <gireeshpunathil>
     stack.appsody.dev/configured: docker.io/appsody/nodejs:0.3
@@ -33,8 +32,9 @@ metadata:
     stack.appsody.dev/id: nodejs
     stack.appsody.dev/version: 0.3.7
   name: nodejs-hello-world
+  namespace: jazzcash
 spec:
-  applicationImage: dev.local/nodejs-hello-world
+  applicationImage: default-route-openshift-image-registry.apps-crc.testing/jazzcash/sample2
   createKnativeService: false
   expose: true
   service:
